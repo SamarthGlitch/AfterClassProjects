@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        html{
+            background-color: rgb(41, 41, 41);
+            color:white
+        }
+        .anitext{
+            font-size: 250%;
+            background: radial-gradient(circle, dodgerblue, yellow );
+            background-clip: text;
+            color: transparent;
+            animation: anitext 15s linear infinite;
+            background-size: 200% 200%;
+            font-family: monospace;
+        }
+        @keyframes anitext{
+            0%{background-position: 0% 0%;}
+            50%{background-position: 100% 100%;}
+            100%{background-position: 0% 0%;}
+        }
+        h2{
+            font-family: monospace;
+            text-shadow: 2px 2px 1px dodgerblue;
+            font-size: 500%;
+        }
+        h6{
+            text-decoration: underline;
+            text-transform: lowercase;
+            font-size: 150%;
+        }
+        #overunder{
+            text-decoration: overline underline;
+            text-transform: none;
+            font-size: 150%;
+        }
+        #wavy{
+            text-decoration: wavy;
+            font-size: 150%;
+        }
+    </style>
+</head>
+<body>
+    <h1><span class="anitext">Text Styling Properties ACP</span></h1>
+    <h2>This is text decoration</h2>
+<h6>This is underline decoration</h6>
+    <div id="wavy">
+        <p>This is wavy decoration</p>
+    </div>
+<p id="overunder">This is overline underline text decoration</p>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="extra.css" rel="stylesheet" type="text/css"/>
+    <style>
+        .anitext{
+            font-size: 250%;
+            background: radial-gradient(circle, dodgerblue, yellow );
+            background-clip: text;
+            color: transparent;
+            animation: anitext 15s linear infinite;
+            background-size: 200% 200%;
+        }
+        @keyframes anitext{
+            0%{background-position: 0% 0%;}
+            50%{background-position: 100% 100%;}
+            100%{background-position: 0% 0%;}
+        }
+        #textshadow{
+            font-family: monospace;
+            text-shadow: 1px 1px 1px(white);
+        }
+        body{
+            text-align: center;
+            color: white;
+            font-family:monospace;
+        }
+        #indent{
+            text-indent: 500px;
+        }
+        html{
+            background-color: rgb(41, 41, 41);
+        }
+        h2{
+            font-family: monospace;
+            text-shadow: 2px 2px 1px dodgerblue;
+            font-size: 500%;
+        }
+        h6{
+            text-decoration: underline;
+            text-transform: lowercase;
+            font-size: 150%;
+        }
+        #overunder{
+            text-decoration: overline underline;
+            text-transform: none;
+            font-size: 150%;
+        }
+        #wavy{
+            text-decoration: wavy;
+            font-size: 150%;
+        }
+        p{
+            font-size: 150%;
+        }
+        ul{
+            position: 400 400;
+        }
+    </style>
+    <meta charset="UTF-8" />
+    <title>EverythingWeLearned</title>
+</head>
+<body>
+    <div>
+    <h1><span class="anitext">Everything we have learned till now</span></h1>
+    </div>
+    <div>
+            <h2>Audio</h2>
+        <audio controls autoplay><source type="audio/mpeg" src="C:\Users\samar\OneDrive\Desktop\Music\C418 - Aria Math (Slowed) 1 Hour.mp3"></audio>
+        </div>
+        <div>
+            <h2>video</h2>
+        <video controls  width="400" height="300"><source type="video/mp4" src="C:\Users\samar\OneDrive\Desktop\Wallpapers\LIVE WALLPAPURS\street1.mp4"></video>
+        </div>
+        <div>
+            <h2>IFrame</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sa2JCQ1Dils?si=odeaTNq9CADqgT0Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+        </div>
+        <div>
+        <h2>Image</h2>
+        <img src="https://images.pexels.com/photos/965345/pexels-photo-965345.jpeg?cs=srgb&dl=pexels-markusspiske-965345.jpg&fm=jpg", width="400", height="300">
+        </div>
+        <h2>Semantics</h2>
+        <main><article><h2>How Innovative Ideas Arise</h2>
+            <div id="p">
+<p>In 2010, Thomas Thwaites decided he wanted to build a toaster from scratch. He walked into a shop, purchased the cheapest toaster he could find, and promptly went home and broke it down piece by piece.</p>
+<p>Thwaites had assumed the toaster would be a relatively simple machine. By the time he was finished deconstructing it, however, there were more than 400 components laid out on his floor. The toaster contained over 100 different materials with three of the primary ones being plastic, nickel, and steel.</p>
+<p>He decided to create the steel components first. After discovering that iron ore was required to make steel, Thwaites called up an iron mine in his region and asked if they would let him use some for the project.</p>
+</div>
+<h2>This is text decoration</h2>
+<h6>This is underline decoration</h6>
+    <div id="wavy">
+        <p>This is wavy decoration</p>
+    </div>
+<p id="overunder">This is overline underline text decoration</p>
+<h1>Advanced Selectors</h1>
+<ul>
+    <li id="fletter">These</li>
+    <li>are</li>
+    <li>Advanced</li>
+    <li>Selectors</li>
+</ul>
+
+<footer><p id="footer">&copy; 2025 my webpage. All rights reserved.</p></footer>
+</body>
+</html>

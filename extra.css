@@ -1,0 +1,22 @@
+a:hover{
+    color:rgb(0, 162, 255);
+}
+ul > li {
+    font-weight: bold;
+}
+ul li:hover{
+    color:rgb(255, 0, 0)
+}
+p:not(:first-of-type){
+    text-decoration: dotted;
+}
+li::first-letter{
+    font-size:200%;
+    color: rgb(255, 145, 0);
+}
+ul li::before{
+    content: "🤩"
+}
+a:after{
+    content: "😎"
+}
