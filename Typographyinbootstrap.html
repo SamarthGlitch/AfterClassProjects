@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Typography</title>
+    <style>
+        .anitext{
+            font-size: 250%;
+            background: radial-gradient(circle, dodgerblue, yellow );
+            background-clip: text;
+            color: transparent;
+            animation: anitext 15s linear infinite;
+            background-size: 200% 200%;
+        }
+        @keyframes anitext{
+            0%{background-position: 0% 0%;}
+            50%{background-position: 100% 100%;}
+            100%{background-position: 0% 0%;}
+        }
+        body{
+            background: rgb(65, 65, 65);
+            color:white;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <p><h1 class="anitext">Thomas Thwaites</h1>In 2010, decided he wanted to <mark>build a 
+        toaster from scratch</mark>. He walked into a shop, purchased the cheapest toaster 
+        he could find, and promptly went
+         home and broke it down piece by piece.
+Thwaites had assumed the toaster would
+ be a <abbr>rltvly</abbr> simple machine. By the time he was 
+ finished deconstructing it, however, there were more than <mark>400 components</mark> laid out on his floor. 
+ The toaster contained over <mark>100 different materials</mark> with three of the primary ones being <mark>plastic</mark>, <mark>nickel</mark>, 
+ and <mark>steel</mark>.
+</p>
+</body>
+</html>
