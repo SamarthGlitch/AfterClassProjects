@@ -2,9 +2,21 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Math Objects</title>
+    <title>Trigonometry and sum</title>
 </head>
 <body>
+    <h1 id="demo"></h1>
+    <script>
+        function sumAll(){
+            var sum = 0;
+            for(i=0; i<arguments.length; i++){
+                sum += arguments[i];
+            }
+            return sum;
+        }
+            document.getElementById("demo").innerHTML = "Sum of 1, 123, 500, 115, 44, 88 = " + sumAll(1, 123, 500, 115, 44, 88);
+        
+    </script>
     <h1>Trigonometric Ratios for Angles 0, 30, 45, 60, 90 and 180</h1>
     <h1>Radians: 0, π/6, π/4, π/3, π/2 and π respectively</h1>
     <script>
