@@ -1,0 +1,288 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+<!-- Google Fonts -->
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+        <style>
+            .container{
+                display: flex;
+                align-items: stretch;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .card{
+              box-shadow: 6px;
+              height:340px;
+            }
+            .card img{
+                height: 200px;
+                object-fit: cover;
+            }
+            body{
+              background-color: #222;
+              color: rgb(255, 255, 255);
+              text-align: center;
+            }
+            #anitext{
+            font-size: 250%;
+            background: radial-gradient(circle, rgb(255, 136, 0), rgb(195, 0, 255));
+            background-clip: text;
+            color: transparent;
+            animation: anitext 15s linear infinite;
+            background-size: 200% 200%;
+            }
+            @keyframes anitext{
+                0%{background-position: 0% 0%;}
+                50%{background-position: 100% 100%;}
+                100%{background-position: 0% 0%;}
+            }
+        </style>
+    </head>
+  <body>
+    <section id="menu" class="py-5">
+    <div class="container text-center">
+      <h1 class="mb-4 text-center">Our Menu</h1>
+      <div class="row g-4">
+        <h3 id="anitext">Meals</h3>
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="PizzaDone.avif" class="card-img-top" alt="Pizza">
+            <div class="card-body">
+              <h5 class="card-title">Margherita Pizza</h5>
+              <p class="card-text">₹349 - Classic cheese and tomato pizza.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="burger.webp" class="card-img-top" alt="Burger">
+            <div class="card-body">
+              <h5 class="card-title">Fried Chicken/Pork Sandwich</h5>
+              <p class="card-text">₹449 - Fried Juicy Chicken/Pork Patty with Melted Cheese and a Spicy Mayo Sauce.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="alfredo.jpg" class="card-img-top" alt="Pasta">
+            <div class="card-body">
+              <h5 class="card-title">Italian Pasta</h5>
+              <p class="card-text">₹349 - Creamy Alfredo pasta with herbs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="fries.jpeg" class="card-img-top" alt="Fries">
+            <div class="card-body">
+              <h5 class="card-title">French Fries</h5>
+              <p class="card-text">₹249 - Classic Deep-Fried Potatoes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="eggsbenedict.webp" class="card-img-top" alt="EggsB">
+            <div class="card-body">
+              <h5 class="card-title">Eggs Benedict</h5>
+              <p class="card-text">₹329 - The Perfect Breakfast Perhaps</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="padthai.jpg" class="card-img-top" alt="PadThai">
+            <div class="card-body">
+              <h5 class="card-title">Pad Thai</h5>
+              <p class="card-text">₹379 - Stir-fried Rice Noodles Tossed in a Sweet&Sour Sauce with Shrimp and Peanuts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="Carbonara.jpg" class="card-img-top" alt="Carbonara">
+            <div class="card-body">
+              <h5 class="card-title">Carbonara</h5>
+              <p class="card-text">₹399 - Italian Pasta made by Rendering Guanciale and Bacon and tossed in a cheese sauce.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="ramen.webp" class="card-img-top" alt="ramen">
+            <div class="card-body">
+              <h5 class="card-title">Chilli-Oil Ramen</h5>
+              <p class="card-text">₹429 - Springy Noodles in a Flavourful Broth And a Soft-Boiled egg</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="salad.avif" class="card-img-top" alt="julius">
+            <div class="card-body">
+              <h5 class="card-title">Ceaser Salad</h5>
+              <p class="card-text">₹239 - Classic Ceaser Salad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="Scrambled-Eggs-main.webp" class="card-img-top" alt="scrambled">
+            <div class="card-body">
+              <h5 class="card-title">Scrambled Eggs</h5>
+              <p class="card-text">₹279 - Classic Diner-style Scrambled Eggs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="chicken-katsu-curry-thumb.jpg" class="card-img-top" alt="katsucurry">
+            <div class="card-body">
+              <h5 class="card-title">Japanese Katsu Curry</h5>
+              <p class="card-text">₹379 - Juicy Fried Chicken Breast on top of White Rice with a Savoury Curry</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="clubsandy.webp" class="card-img-top" alt="clubsand">
+            <div class="card-body">
+              <h5 class="card-title">Club Sandwich</h5>
+              <p class="card-text">₹429 - Grilled Chicken, Tomato, Greens and Butter-Toasted Bread 2x.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container text-center">
+      <div class="row g-4">
+        <h3 id="anitext">Beverages</h3>
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="chai.webp" class="card-img-top" alt="chai">
+            <div class="card-body">
+              <h5 class="card-title">Chai</h5>
+              <p class="card-text">₹279 - A Hot beverage consisting of Milk and Black Tea.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="coffee.webp" class="card-img-top" alt="coffee">
+            <div class="card-body">
+              <h5 class="card-title">Coffee</h5>
+              <p class="card-text">₹139 - Cappucino/Americano/Espresso/Latte/Macchiato/Mocha/etc</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="soda.jpg" class="card-img-top" alt="soda">
+            <div class="card-body">
+              <h5 class="card-title">Soda</h5>
+              <p class="card-text">[₹99/Can(0.33L)] OR [₹169 or ₹219/Bottle(0.5L or 1L)] - CocaCola/Pepsi/Fanta/Miranda/Sprite/etc</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="lemonjuic.png" class="card-img-top" alt="lemonjuice">
+            <div class="card-body">
+              <h5 class="card-title">Lemon Juice/Soda</h5>
+              <p class="card-text">₹99/₹139 - Juiced Lemons in Water/SodaWater (Salt/Sugar/Both/Masala)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="fruitjuice.jpg" class="card-img-top" alt="watermelon">
+            <div class="card-body">
+              <h5 class="card-title">Fresh Fruit Juices</h5>
+              <p class="card-text">₹99 - Watermelon/Orange/Mixed/Apple/Mango/etc</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="icedtea.jpg" class="card-img-top" alt="icedtea">
+            <div class="card-body">
+              <h5 class="card-title">Iced Tea</h5>
+              <p class="card-text">₹119 - Sweet Tea with Ice</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section>
+    <div class="container text-center">
+      <div class="row g-4">
+        <h3 style="text-align: center;" id="anitext">Milkshakes</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="milkshake-b0d6105.jpg" class="card-img-top" alt="chocomilk">
+            <div class="card-body">
+              <h5 class="card-title">Chocolate Milkshake</h5>
+              <p class="card-text">₹139 - Milk Chocolate and Chocolate Ice Cream Emulsified in Milk Topped with Chocolate Sauce</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="AR-238627-Vanilla-Milkshakes-without-Ice-Cream-DDMFS-4x3-68c7af8ca6714848a5e4c904996152e3.jpg" class="card-img-top" alt="vanillamilk">
+            <div class="card-body">
+              <h5 class="card-title">Vanilla Milkshake</h5>
+              <p class="card-text">₹139 - Vanilla Ice Cream with Milk Topped with Vanilla Ice Cream</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card shadow">
+            <img src="Strawberry-Milkshake-4x3-1-2000-99ab79da91564975afde0bcfc98310e1.jpeg" class="card-img-top" alt="icedtea">
+            <div class="card-body">
+              <h5 class="card-title">Strawberry Milkshake</h5>
+              <p class="card-text">₹139 - Strawberry Ice Cream with Milk Topped With Fresh Strawberry and Chocolate Sauce</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="order.html" class="btn btn-light btn-lg border" id="goback">Ready to order?</a>
+      <a href="index.html" class="btn btn-light btn-lg border" id="goback">Go Back</a>
+    </div>
+  </section>
+  <br>
+    <footer>
+      <p style="text-align: center;">&copy; Restaurant | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

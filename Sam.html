@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sam</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <script src="https://kit.fontawesome.com/996973c893.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+<!-- Google Fonts -->
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #222;
+      color: white;
+    }
+    .main {
+      color: white;
+      height: 959px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .main h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    }
+    .menu-card{
+      box-shadow: 6px;
+      height: 340px;
+    }
+    .menu-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background: #222;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sam's Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#socialmedia">Social Media</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br>
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>About Us</h2>
+          <p>Sam is a 20-year-old student from India, currently pursuing his engineering degree. Passionate about technology and problem-solving, he enjoys exploring how things work and finding practical solutions to challenges. 
+            Alongside his studies, Sam is curious about new innovations in science, software, and design, which motivates him to keep learning beyond the classroom. At this stage of his journey, he is focused on building a strong foundation in engineering 
+            while also developing the skills that will prepare him for future opportunities in his career.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2>Contact Me!</h2>
+      <form class="row g-3 mt-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <div class="col-12">
+          <button href="Requstsent.html" type="submit" class="btn btn-light btn-lg border">Send Message(s)</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section id="socialmedia">
+    <div id="social-media" class="container-fluid">
+        <div class="container text-white py-5">
+            <h1 class="text-center">Social Media</h1>
+            <h2 class="m-heading text-center">Where you can find us</h2>
+            <div class="row">
+                <div class="col-3 media_link btn">
+                    <a href="https://in.linkedin.com" class="btn">
+                      <div class="row">
+                        <div class="col-6 d-flex justify-content-start">
+                            <h3 class="m-0 pt-1 text-white">LinkedIn</h3>
+                        </div>
+                        <div class="col-5 d-flex justify-content-end align-items-center">
+                            <i class="fab fa-linkedin-in fa-3x text-white"></i>
+                        </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-3 media_link btn">
+                  <a href="https://www.instagram.com" class="btn">
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-start">
+                            <h3 class="m-0 pt-1 text-white">Instagram</h3>
+                        </div>
+                        <div class="col-5 d-flex justify-content-end align-items-center">
+                            <i class="fab fa-instagram fa-3x text-white"></i>
+                        </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-3 media_link btn">
+                    <a href="https://www.youtube.com" class="btn">
+                      <div class="row">
+                        <div class="col-6 d-flex justify-content-start">
+                            <h3 class="m-0 pt-1 text-white">Youtube</h3>
+                        </div>
+                        <div class="col-5 d-flex justify-content-end align-items-center">
+                            <i class="fab fa-youtube fa-3x text-white"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-3 media_link btn">
+                    <a href="https://www.mail.google.com" class="btn">
+                      <div class="row">
+                        <div class="col-6 d-flex justify-content-start">
+                            <h3 class="m-0 pt-1 text-white">Email</h3>
+                        </div>
+                        <div class="col-5 d-flex justify-content-end align-items-center">
+                            <i class="fas fa-envelope fa-3x text-white"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; Sam's Portfolio | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
