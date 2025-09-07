@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transaction</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+        <script src="https://kit.fontawesome.com/996973c893.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+        <style>
+            body{
+                align-items: center;
+                text-align: center;
+                margin-top: 250;
+            }
+            #trnsac{
+                width: 400px;
+                height: 25px;
+            }
+            #btn1{
+                text-align: center;
+                font-size: 20px;
+                padding: 5px;
+                padding-left: 40px;
+                padding-right: 40px;
+                
+            }
+            #btn2{
+                text-align: center;
+                font-size: 20px;
+                padding: 5px;
+                padding-left: 40px;
+                padding-right: 40px;
+                margin-right: 100px;
+                margin-left: 100px;
+            }
+            #btn3{
+                text-align: center;
+                font-size: 20px;
+                padding: 5px;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            #transac{
+                margin-bottom: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Transaction</h1>
+            <section id="transaction" class="py-5">
+                <div class="container text-center">
+                <form class="row g-3 mt-3">
+                    <div class="col-12" style="font-size: 20px;" id="transac">
+                        Enter Transaction Amount: <input type="number" id="trnsac">
+                    </div>
+
+                    <div class="col-12">
+                        <a href="#" class="btn btn-dark" id="btn1">Credit</a>
+                        <a href="#" class="btn btn-dark" id="btn2">Debit</a>
+                        <a href="Bank.html" class="btn btn-dark" id="btn3">Go Back</a>
+                    </div>
+                    
+                </form>
+                    <section id="contact" class="py-5">
+                        <div class="container text-center">
+                            <h2>*REQUIRED*</h2>
+                            <form class="row g-3 mt-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                  <input type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="number" id="phn" class="form-control" placeholder="+91 _ _ _ _ _ _ _ _ _ _" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="password" class="form-control" placeholder="Password" required>
+                                </div>
+                                <div class="col-12">
+                                  <button href="sentbank.html" type="submit" class="btn btn-light btn-lg border">Send Message(s)</button>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+            </section>
+                
+                
+            
+        </section>
+    </body>
+</html>

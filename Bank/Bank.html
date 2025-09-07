@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THEBank</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+<!-- Google Fonts -->
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #222;
+      color: white;
+    }
+    .main {
+      background: url('rupees.jpg') no-repeat center center/cover;
+      color: white;
+      height: 959px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .main h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    }
+    .option-card{
+      box-shadow: 6px;
+      height: 340px;
+      font-size: 50px;
+    }
+    .option-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background: #222;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">THEBank</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Options">Options</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="main">
+    <div class="container">
+      <h1>Welcome to THEBank</h1>
+      <p class="lead"><b>The safest place to keep your money</b></p>
+      <a href="#Options" class="btn btn-dark btn-lg mt-3">Options</a>
+    </div>
+  </section>
+
+  <section id="Options" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Options</h2>
+      <div class="row g-3">
+        <div class="col-md-12">
+          <div class="card option-card shadow">
+              <a class="card-block stretched-link text-decoration-none text-dark" href="creddeb.html">
+              <img src="creditdebit.avif" class="card-img-top" alt="creddeb">
+              Transaction(Credit or Debit or UPI)
+            </a>
+          </div>
+        </div>
+  </section>
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2>Contact Us</h2>
+      <form class="row g-3 mt-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <div class="col-12">
+          <button href="sentbank.html" type="submit" class="btn btn-light btn-lg border">Send Message(s)</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; Restaurant | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
