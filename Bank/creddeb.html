@@ -70,25 +70,14 @@
       <input type="number" id="amount" placeholder="Enter amount"><br>
       <button onclick="deposit()">Credit</button>
       <button onclick="withdraw()">Debit</button>
+      <p id="inval" class="hidden" style="color: red;">Invalid Amount Entered</p>
+      <p id="inval2" class="hidden" style="color: red;">Enter a Valid Amount</p>
       <a href="BankLoggedin.html" class="btn">Go Back</a>
     </div>
   </div>
 
   <script>
     let balance = 1000;
-    const user = { username: "user", password: "1234" };
-
-    function login() {
-      let username = document.getElementById("username").value;
-      let password = document.getElementById("password").value;
-
-      if (username === user.username && password === user.password) {
-        document.getElementById("login-section").classList.add("hidden");
-        document.getElementById("dashboard").classList.remove("hidden");
-      } else {
-        alert("Invalid login! Try again.");
-      }
-    }
 
     function deposit() {
       let amount = parseFloat(document.getElementById("amount").value);
@@ -96,8 +85,9 @@
         balance += amount;
         document.getElementById("balance").innerText = balance;
         document.getElementById("amount").value = "";
+        document.getElementById("inval2").classList.add("hidden")
       } else {
-        alert("Enter a valid amount!");
+        document.getElementById("inval2").classList.remove("hidden")
       }
     }
 
@@ -107,8 +97,9 @@
         balance -= amount;
         document.getElementById("balance").innerText = balance;
         document.getElementById("amount").value = "";
+        document.getElementById("inval").classList.add("hidden")
       } else {
-        alert("Invalid withdrawal amount!");
+        document.getElementById("inval").classList.remove("hidden")
       }
     }
 
