@@ -76,20 +76,7 @@
 
   <script>
     let balance = 1000;
-    const user = { username: "user", password: "1234" };
-
-    function login() {
-      let username = document.getElementById("username").value;
-      let password = document.getElementById("password").value;
-
-      if (username === user.username && password === user.password) {
-        document.getElementById("login-section").classList.add("hidden");
-        document.getElementById("dashboard").classList.remove("hidden");
-      } else {
-        alert("Invalid login! Try again.");
-      }
-    }
-
+    
     function deposit() {
       let amount = parseFloat(document.getElementById("amount").value);
       if (amount > 0) {
@@ -119,3 +106,4 @@
   </script>
 </body>
 </html>
+
