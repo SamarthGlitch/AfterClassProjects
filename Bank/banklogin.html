@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .bank-app {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    input, button {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .balance {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #28a745;
+    }
+  </style>
+</head>
+<body>
+  <div class="bank-app">
+    <!-- Login Section -->
+    <div id="login-section">
+      <h2>Bank Login</h2>
+      <input type="text" id="username" placeholder="Enter Username(user)"><br>
+      <input type="password" id="password" placeholder="Enter Password(1234)"><br>
+      <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Dashboard Section -->
+    <div id="dashboard" class="hidden">
+      <h2>Welcome to Your Bank</h2>
+      <p class="balance">Balance: ₹<span id="balance">1000</span></p>
+
+      <input type="number" id="amount" placeholder="Enter amount"><br>
+      <button onclick="Bank.html">Deposit</button>
+      <button onclick="withdraw()">Withdraw</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script>
+    let balance = 1000;
+    const user = { username: "user", password: "1234" };
+
+    function login() {
+      let username = document.getElementById("username").value;
+      let password = document.getElementById("password").value;
+
+      if (username === user.username && password === user.password) {
+        document.getElementById("login-section").classList.add("hidden");
+        document.getElementById("dashboard").classList.remove("hidden");
+      } else {
+        alert("Invalid login! Try again.");
+      }
+    }
+
+    function deposit() {
+      let amount = parseFloat(document.getElementById("amount").value);
+      if (amount > 0) {
+        balance += amount;
+        document.getElementById("balance").innerText = balance;
+        document.getElementById("amount").value = "";
+      } else {
+        alert("Enter a valid amount!");
+      }
+    }
+
+    function withdraw() {
+      let amount = parseFloat(document.getElementById("amount").value);
+      if (amount > 0 && amount <= balance) {
+        balance -= amount;
+        document.getElementById("balance").innerText = balance;
+        document.getElementById("amount").value = "";
+      } else {
+        alert("Invalid withdrawal amount!");
+      }
+    }
+
+    function logout() {
+      document.getElementById("dashboard").classList.add("hidden");
+      document.getElementById("login-section").classList.remove("hidden");
+    }
+  </script>
+</body>
+</html>
